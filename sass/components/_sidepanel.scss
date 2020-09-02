@@ -1,0 +1,38 @@
+.side-container > * {
+  padding: 1rem 2rem;
+  margin: 0rem 1rem;
+  background-color: $color-green-light;
+  border-radius: $corners;
+  opacity: .3;
+}
+
+.conversion-chart {
+  font-size: 1.3rem;
+}
+
+.current-time {
+  font-size: 1.8rem;
+}
+
+.gif {
+  display:flex;
+  flex-direction: column-reverse;
+  background-image: url('../../img/shrekrun.gif');
+  visibility: hidden; ///UNDO FOR TESTING ONLY
+  background-size: cover;
+  opacity: 1;
+  padding: 0;
+  margin: 1rem 1rem;
+  height: 100%;
+  width: auto;
+}
+
+.btn__show-gif,
+.btn__hide-gif {
+  background-color: $color-green-dark;
+
+
+  &:hover {
+    color: $color-brown-dark;
+  }
+}

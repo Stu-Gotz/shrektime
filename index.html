@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,400;1,500&display=swap"
+            rel="stylesheet">
+
+        <title>ShrekTime</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Where the converted time is displayed. -->
+
+            <div class="results-row">
+
+                <div class="icon">
+                    <!-- Link to an about, but that doesn't exist yet. -->
+                    <a href="#" class="icon__link"><img src="./img/icons8-shrek-256.png" alt="shrek icon"></a>
+                </div>
+
+                <div class="results">
+                    <!-- <h3 class="results__time">1sH = 15h</h3> -->
+                </div>
+
+                <!-- Where the user chooses a date. Enfoce DD/MM/YYYY format, add non-US time format with toggle. Can only go back to 11 April 2001 (release date) is BS if before. no suffix for positive date.-->
+                <form class="user-input">
+
+                    <label class="user-input__label" for="#user-input">Enter an elapsed time</label> <input
+                        class="user-input__field" id="#user-input" type="text" placeholder="1:30 = 1 and a half hours">
+
+                    <!-- <label class="time-toggle">
+                        <input type="checkbox" class="switch">
+                        <span class="slider">MM/DD/YYY</span>
+                    </label> -->
+
+                    <button class="btn btn__submit">Submit</button>
+
+                </form>
+
+            </div>
+
+            <div class="main-container">
+
+                <div class="column side-container">
+
+                    <div class="conversion-chart">
+                        1 Shrek (Sh) = 1.5 hours<br>
+                        1 Shrek Day (SD)= 16 Sh<br>
+                        1 Shrek Month (SM) = 584 Sh (10 SM in a year) <br>
+                    </div>
+                    <div class="gif" id="side-gif">
+                        <button class="btn btn__hide-gif">Click to hide.</button>
+                        <!-- <button class="btn btn__show-gif">Click to show.</button> -->
+                        <!-- <img src="'../../img/shrekrun.gif" alt="shrek running"> -->
+                    </div>
+                    <div class="current-time">
+                        Todays date in SYs is: <br> 113512 => 19 Years, 4 Months, 29 days, 6 hours (current date and
+                        time. hours in dec)
+                    </div>
+
+                </div>
+
+                <div class="calendar">
+
+                    <!-- Modify calendar to fit. Maybe try a mud-textured font? -->
+                    <div class="month">
+
+                        <ul class="month__display">
+                            <li class="prev"><a href="#" class="month__arrow">&#10094;</a></li>
+                            <li>August<br><span style="font-size:18px">2020</span></li>
+                            <li class="next"><a href="#" class="month__arrow">&#10095;</a></li>
+                        </ul>
+
+                    </div>
+
+                    <ul class="weekdays">
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                        <li>Sunday</li>
+                    </ul>
+
+                    <ul class="days">
+                        <li><a href="#" class="day">1</a></li>
+                        <li><a href="#" class="day">2</a></li>
+                        <li><a href="#" class="day">3</a></li>
+                        <li><a href="#" class="day">4</a></li>
+                        <li><a href="#" class="day">5</a></li>
+                        <li><a href="#" class="day">6</a></li>
+                        <li><a href="#" class="day">7</a></li>
+                        <li><a href="#" class="day">8</a></li>
+                        <li><a href="#" class="day">9</a></li>
+                        <li><a href="#" class="day">10</a></li>
+                        <li><a href="#" class="day">11</a></li>
+                        <li><a href="#" class="day">12</a></li>
+                        <li><a href="#" class="day">13</a></li>
+                        <li><a href="#" class="day">14</a></li>
+                        <li><a href="#" class="day">15</a></li>
+                        <li><a href="#" class="day">16</a></li>
+                        <li><a href="#" class="day">17</a></li>
+                        <li><a href="#" class="day">18</a></li>
+                        <li><a href="#" class="day">19</a></li>
+                        <li><a href="#" class="day">20</a></li>
+                        <li><a href="#" class="day">21</a></li>
+                        <li><a href="#" class="day">22</a></li>
+                        <li><a href="#" class="day">23</a></li>
+                        <li><a href="#" class="day">24</a></li>
+                        <li><a href="#" class="day">25</a></li>
+                        <li><a href="#" class="day">26</a></li>
+                        <li><a href="#" class="day">27</a></li>
+                        <li><a href="#" class="day"><span class="active">28</a></span></li>
+                        <li><a href="#" class="day">29</a></li>
+                        <li><a href="#" class="day">30</a></li>
+                        <li><a href="#" class="day">31</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <a href="https://github.com/stu-gotz" class="footer-link">link to my git</a> Made with love and misguidance
+            by Alan
+            Nardo. 2020.
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/common/moment/moment.js" type="module"></script>
+    </body>
+
+</html>

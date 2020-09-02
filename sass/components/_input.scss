@@ -1,0 +1,35 @@
+.user-input {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > * {
+    margin: 1rem 1rem;
+  }
+
+
+  &__field {
+    background-color: $color-green-light;
+    border: none;
+    padding: 1rem;
+    border-radius: 10rem;
+  }
+  &::placeholder {
+    color: $color-brown-light;
+    opacity: .7;
+  }
+}
+
+.slider {
+  font-size: 1.3rem;
+}
+
+.btn__submit {
+  transition: all 1s;
+
+  &:hover {
+    box-shadow: 0 1px 1rem rgba(0,0,0, .4);
+    background-color: $color-green-dark;
+  }
+}

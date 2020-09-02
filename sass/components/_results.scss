@@ -1,0 +1,38 @@
+.results {
+  padding: .5rem 1rem;
+  
+  &__time {
+    margin-right: auto;
+    &:hover {
+      //animate shadow 
+    }
+  }
+}
+
+.icon {
+  animation: rotateIcon 5s linear infinite;
+  
+  &__link {
+    font-size: 4rem;
+
+    & > img {
+      height: 8rem;
+      width: auto;
+    }
+  }
+  & > * {
+    height: 8rem;
+    width: auto;
+    padding: 1rem;
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

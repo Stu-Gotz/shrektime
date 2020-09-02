@@ -1,0 +1,25 @@
+{
+  "name": "shrektime",
+  "version": "1.0.0",
+  "description": "A stupid idea gone too far",
+  "main": "main.js",
+  "type": "module",
+  "dependencies": {
+    "fractional": "^1.0.0",
+    "live-server": "^1.2.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w",
+    "devserver": "live-server",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Alan Nardo",
+  "license": "ISC"
+}

@@ -1,0 +1,73 @@
+.calendar {
+  background-color: $color-green-dark;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: $corners;
+  display: flex;
+  flex-flow: column;
+}
+
+
+.month {
+  padding: 6rem 10rem;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+}
+
+.month ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  & a{
+    color: $color-brown-dark;
+    text-decoration: none;
+    font-size: 4rem;
+  }
+  
+}
+
+// use grid 7 x 5 (modify for february in js)
+.weekdays {
+  background: transparent;
+  color: $color-brown-dark;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.days {
+  list-style: none;
+  text-align: center;
+  font-weight: 200;
+  text-decoration: none;
+  padding: 1rem;
+  background: $color-green-dark;
+
+  display: grid;
+  grid-auto-rows: row dense;
+  grid-template: repeat(6,1fr) / repeat(7,1fr); // rows / columns
+  justify-content: stretch;
+  gap: .5rem;
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+  & > li {
+    background: $color-brown-light;
+    height: 100%; 
+    border-radius: $corners;
+    opacity: .3;
+  }
+}
+
+.day {
+  text-decoration: none;
+  color: $color-brown-dark;
+}
